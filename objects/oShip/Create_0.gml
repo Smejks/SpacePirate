@@ -1,0 +1,34 @@
+speed = 10;
+image_index = 0;
+image_speed = 0;
+maxSpeed = 15;
+turboBoost = 0.1;
+turboTimer = 0;
+turboMaxSpeed = 0;
+
+drifting = 0;
+driftingTimer = 0;
+driftDuration = 50;
+driftSoundStarted = false;
+driftTurnRate = 0.9;
+
+
+hitPoints = 80;
+maxHitPoints = 80;
+ammo = 150;
+reFire = 2;
+maxAmmo = 900;
+fireRate = 6;
+shot = 0;
+weaponsRestored = 0;
+upgradeLevel = 1;
+
+audio_stop_sound(warning3);
+audio_play_sound(drift, 5, 1);
+audio_play_sound(warning3, 1, 1);
+audio_play_sound(driftidle, 4, 1);
+
+
+
+
+
