@@ -79,7 +79,7 @@ if (hitPoints < maxHitPoints / 4 && audio_is_playing(damaged) == false)
 
 if (hitPoints < 1)
 {
-	game_restart()
+	room_goto(3)
 }
 
 if (courseCorrection >= 2 && courseCorrection <= -3)
@@ -296,4 +296,9 @@ if (speed > maxSpeed)
 if (speed < 8)
 {
 	speed = 8;
+}
+
+if (instance_number(oSmoke) < 20)
+{
+instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);
 }

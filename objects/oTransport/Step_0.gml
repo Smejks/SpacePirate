@@ -4,7 +4,7 @@ if (transportHP > 5)
 alertAuthorities++;
 }
 
-if (alertAuthorities > 2000 && instance_number(oLawEnforcer) == 0)
+if (alertAuthorities > 2000 && instance_number(oLawEnforcer) < numberOfLawEnforcers && oWarpPoint.jamming == false)
 {
 	for (i = 0; i < numberOfLawEnforcers; i++)
 	{
@@ -28,11 +28,11 @@ image_angle += sin(degtorad(pointdir - image_angle)) * transportRSpeed;
 speed = min(speed + 0.5, 4);
 direction = image_angle;
 
-if (transportHP < 5 && transportHP > 1)
+if (transportHP < 5 && transportHP > 1 && keyboard_check (vk_space))
 {
-speed = 0.1;
+speed = 8;
 image_angle += transportRSpeed;
-direction = direction;
+direction = point_direction(x, y, oShip.x, oShip.y);
 }
 if (transportHP < 1)
 {
@@ -42,14 +42,5 @@ if (transportHP < 1)
 		{
 			audio_play_sound(bigexplosion, 1, 0);
 		}
-room_goto_next()
+room_goto(6)
 }
-
-if (transportHP < 5 && 
-	instance_number(oBattleship) == 0 && 
-	instance_number(oGunboat) == 0 &&
-	instance_number(oLawEnforcer) == 0)
-	{
-		audio_stop_sound(song1);
-		room_goto("3")
-	}

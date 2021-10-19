@@ -13,7 +13,7 @@ driftSoundStarted = false;
 driftTurnRate = 0.9;
 
 
-hitPoints = 70;
+hitPoints = 7;
 maxHitPoints = 80;
 ammo = 150;
 reFire = 2;
@@ -24,6 +24,7 @@ weaponsRestored = 0;
 upgradeLevel = 1;
 
 audio_stop_sound(warning3);
+audio_stop_sound(song2);
 audio_play_sound(drift, 5, 1);
 audio_play_sound(warning3, 1, 1);
 audio_play_sound(driftidle, 4, 1);

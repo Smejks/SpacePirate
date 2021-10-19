@@ -1,5 +1,3 @@
-
-
 draw_self();
 
 draw_text_transformed_color(x + 25, y - 100, ammo, 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
@@ -16,7 +14,12 @@ if (hitPoints < maxHitPoints / 4)
 draw_text_transformed_color(oShip.x - 600, oShip.y + 130, "HULL CRITICAL!", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
 }
 
-if (room == "Raid" && instance_number(oBattleship) == 0 && instance_number(oGunboat) == 0)
+if (room == 1 && instance_number(oBattleship) == 0 && instance_number(oGunboat) == 0)
 {
 	draw_text_transformed_color(oShip.x - 40, oShip.y + 150, "THE ESCORTS ARE DOWN!", 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
+}
+
+if (room == 2)
+{
+draw_text_transformed_color(oShip.x - 50, oShip.y + 130, "TUTORIAL!", 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
 }
