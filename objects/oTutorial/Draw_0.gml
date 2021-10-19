@@ -12,6 +12,7 @@ if (time > 0 && time < 5)
 	{
 	sprite_index = sRepair
 	draw_text_transformed_color(oTutorial.x - 40, oTutorial.y + 170, "REPAIR HULL", 1.5, 1.5, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_transformed_color(oTutorial.x - 40, oTutorial.y + 200, "(HOLD SPACE TO SEE WHERE THEY ARE)", 1.5, 1.5, 0, c_white, c_white, c_white, c_white, 1);
 	}
 	if (time > 8 && time < 11)
 	{

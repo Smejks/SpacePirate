@@ -13,7 +13,7 @@ driftSoundStarted = false;
 driftTurnRate = 0.9;
 
 
-hitPoints = 80;
+hitPoints = 70;
 maxHitPoints = 80;
 ammo = 150;
 reFire = 2;
