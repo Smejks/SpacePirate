@@ -1,6 +1,24 @@
 show_debug_message(room)
 image_index = 0;
-x += 1
+x += move;
+
+if (instance_number(oSmoke) < 20)
+{
+instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);
+}
+
+if (x > room_width - 10)
+{
+	move = -0.4
+	if (instance_number(oSmoke) < 1)
+{
+instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);
+}
+}
+if (x < 10)
+{
+	move = 1;
+}
 
 audio_stop_sound(damaged);
 audio_stop_sound(song3);
@@ -20,13 +38,9 @@ if (audio_is_playing(winscreen) == false)
 }
 
 
-if (mouse_check_button(mb_right) || mouse_check_button(mb_left))
+if (mouse_check_button(mb_left))
 {
 	audio_stop_sound(winscreen);
 	room_goto(1);
 }
 
-if (instance_number(oSmoke) < 20)
-{
-instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);
-}

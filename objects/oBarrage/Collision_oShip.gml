@@ -2,6 +2,7 @@ oShip.hitPoints -= 2;
 instance_create_layer(x, y, "Instances", oExplosion);
 
 
+
 switch (explosion)
 			{
 				case "0" :

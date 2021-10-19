@@ -1,7 +1,7 @@
 
 if (x < 0 || x > room_width || y < 0 || y > room_height)
 {
-	hitPoints -= 0.1;
+	hitPoints -= 1;
 	if (audio_is_playing(panicalarm1) == false)
 	{
 	audio_play_sound(panicalarm1, 5, 1);

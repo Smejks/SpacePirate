@@ -18,7 +18,7 @@ maxHitPoints = 80;
 ammo = 150;
 reFire = 2;
 maxAmmo = 900;
-fireRate = 6;
+fireRate = 5;
 shot = 0;
 weaponsRestored = 0;
 upgradeLevel = 1;
@@ -28,6 +28,7 @@ audio_stop_sound(song2);
 audio_play_sound(drift, 5, 1);
 audio_play_sound(warning3, 1, 1);
 audio_play_sound(driftidle, 4, 1);
+
 
 
 
