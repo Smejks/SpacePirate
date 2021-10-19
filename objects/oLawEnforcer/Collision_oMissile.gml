@@ -1,0 +1,1 @@
+lawEnforcerHP -= 1;

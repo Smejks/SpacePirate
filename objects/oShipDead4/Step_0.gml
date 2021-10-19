@@ -10,5 +10,5 @@ if (oShipDead.x > room_width - 15)
 
 if (oShipDead.x == 10)
 {
-	move = -10;
+	move = -0.5;
 }

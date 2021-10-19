@@ -1,6 +1,7 @@
 show_debug_message(room)
 image_index = 0;
-x += move;
+
+x += move
 
 if (instance_number(oSmoke) < 20)
 {
@@ -9,15 +10,18 @@ instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "In
 
 if (x > room_width - 10)
 {
-	move = -0.4
+	move = -1;
+	oSmoke.image_speed = 0.4;
 	if (instance_number(oSmoke) < 1)
 {
 instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);
 }
 }
-if (x < 10)
+if (x < 1)
 {
 	move = 1;
+	sprite_index = sShip;
+	image_index = 3;
 }
 
 audio_stop_sound(damaged);

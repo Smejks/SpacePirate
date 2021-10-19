@@ -1,4 +1,5 @@
-image_angle = oSmoke.image_angle;
+
+image_angle = oShipDead.direction;
 
 image_alpha = 0.1;
 image_speed = 0.8;

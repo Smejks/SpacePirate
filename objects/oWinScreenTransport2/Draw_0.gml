@@ -1,5 +1,5 @@
 draw_self();
 
-image_angle -= 0.01;
+image_angle -= 0.03;
 
 

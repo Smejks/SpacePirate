@@ -1,7 +1,7 @@
 
 if (x < 0 || x > room_width || y < 0 || y > room_height)
 {
-	hitPoints -= 1;
+	hitPoints -= 0.3;
 	if (audio_is_playing(panicalarm1) == false)
 	{
 	audio_play_sound(panicalarm1, 5, 1);
@@ -238,7 +238,7 @@ if (key_R)
 if (ammo > 0)
 {
 
-if (speed < maxSpeed + 10)
+if (speed < maxSpeed + 8)
 {
 	audio_pause_sound(warning3)
 	if (weaponsRestored == 1)
@@ -298,7 +298,15 @@ if (speed < 8)
 	speed = 8;
 }
 
-if (instance_number(oSmoke) < 20)
+if (instance_number(oSmoke) < 200)
 {
-instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);
+instance_create_layer(x + (random_range(-18, 18)), y+ (random_range(-50, 50)), "Instances", oSmoke);
 }
+//if (room != 3)
+//{
+//	if (instance_number(oSmoke2) < 100)
+//	{
+//		instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke2);
+//		oSmoke2.image_angle = random_range(-15, 15);
+//	}
+//}

@@ -18,7 +18,9 @@ draw_text_transformed_color(oShip.x - 180, oShip.y + 250, "LAW ENFORCEMENT INBOU
 
 if (transportHP < 5 && transportHP > 1 && keyboard_check (vk_space))
 {
-		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_yellow, c_orange)
-		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_yellow, c_orange)
-		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_yellow, c_orange)
+		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_aqua, c_blue)
+		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_aqua, c_blue)
+		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_aqua, c_blue)
+		
+		draw_line_color(oShip.x, oShip.y, oWarpPoint.x, oWarpPoint.y, c_aqua, c_blue)
 }

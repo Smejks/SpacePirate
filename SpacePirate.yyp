@@ -98,7 +98,7 @@
     {"id":{"name":"warning3","path":"sounds/warning3/warning3.yy",},"order":12,},
     {"id":{"name":"engines","path":"sounds/engines/engines.yy",},"order":0,},
     {"id":{"name":"song1","path":"sounds/song1/song1.yy",},"order":34,},
-    {"id":{"name":"Warp26","path":"sprites/Warp26/Warp26.yy",},"order":21,},
+    {"id":{"name":"Warp1","path":"sprites/Warp1/Warp1.yy",},"order":21,},
     {"id":{"name":"sMissileExplosion","path":"sprites/sMissileExplosion/sMissileExplosion.yy",},"order":5,},
     {"id":{"name":"oWinScreenTransport2","path":"objects/oWinScreenTransport2/oWinScreenTransport2.yy",},"order":23,},
     {"id":{"name":"barrage","path":"sounds/barrage/barrage.yy",},"order":29,},
@@ -116,6 +116,7 @@
     {"id":{"name":"Win","path":"rooms/Win/Win.yy",},"order":5,},
     {"id":{"name":"oSmoke","path":"objects/oSmoke/oSmoke.yy",},"order":33,},
     {"id":{"name":"Warped","path":"rooms/Warped/Warped.yy",},"order":7,},
+    {"id":{"name":"Warp2","path":"sprites/Warp2/Warp2.yy",},"order":29,},
     {"id":{"name":"Raid","path":"rooms/Raid/Raid.yy",},"order":0,},
   ],
   "Options": [
