@@ -20,7 +20,7 @@ if (audio_is_playing(song2) == false)
 }
 show_debug_message(room)
 
-if (mouse_check_button(mb_right) || mouse_check_button(mb_left))
+if (mouse_check_button(mb_left))
 {
 	audio_stop_sound(winscreen);
 	room_goto(1);

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTransport",
-    "path": "sprites/sTransport/sTransport.yy",
+    "name": "sTransportDisabled",
+    "path": "sprites/sTransportDisabled/sTransportDisabled.yy",
   },
   "solid": false,
   "visible": true,

@@ -15,3 +15,10 @@ if (alertAuthorities > 1800)
 {
 draw_text_transformed_color(oShip.x - 180, oShip.y + 250, "LAW ENFORCEMENT INBOUND!", 2, 2, 0, c_aqua, c_aqua, c_red, c_red, 1);
 }
+
+if (transportHP < 5 && transportHP > 1 && keyboard_check (vk_space))
+{
+		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_yellow, c_orange)
+		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_yellow, c_orange)
+		draw_line_color(x + random_range(-50, 50), y + random_range(-5, 5), oShip.x, oShip.y, c_yellow, c_orange)
+}
