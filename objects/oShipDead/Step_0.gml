@@ -11,7 +11,7 @@ instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "In
 if (x > room_width - 10)
 {
 	move = -1;
-	oSmoke.image_speed = 0.4;
+	
 	if (instance_number(oSmoke) < 1)
 {
 instance_create_layer(x + (random_range(-1, 1)), y+ (random_range(-10, 10)), "Instances", oSmoke);

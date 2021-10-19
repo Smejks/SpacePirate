@@ -252,6 +252,16 @@ if (speed < maxSpeed + 8)
 			instance_create_layer(oShip.x, oShip.y, "Instances", oShot);
 			ammo--;
 			reFire = 0;
+			
+			if (weaponsRestored == 2)
+			{
+				ammo--;
+				reFire = 0;
+				audio_play_sound(barrage, 1, 0)
+				audio_play_sound(barrage, 1, 0)				
+			}
+			else
+			{
 			shot = round(random_range(0, 6));
 			
 			switch (shot)
@@ -278,6 +288,7 @@ if (speed < maxSpeed + 8)
 				audio_play_sound(shot7, 1, 0);
 				break;
 			}	
+			}
 			
 		}
 }
