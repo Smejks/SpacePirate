@@ -1,8 +1,8 @@
-shotDamage = 1;
+shotDamage = random_range(1, 2);
 
 if (oShip.weaponsRestored == 2)
 {
-	shotDamage = 1;
+	shotDamage = 4;
 	oShip.speed -= 1;
 }
 shotLifeTime = 0;

@@ -79,7 +79,18 @@ if (hitPoints < maxHitPoints / 4 && audio_is_playing(damaged) == false)
 
 if (hitPoints < 1)
 {
-	room_goto(3)
+	image_alpha = 0.3;
+	deathDelayTime += delta_time / 1000000;
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	
+	if (deathDelayTime > 1)
+	{
+		room_goto(3)
+	}
 }
 
 if (courseCorrection >= 2 && courseCorrection <= -3)
@@ -165,7 +176,22 @@ key_down = keyboard_check (vk_down) || keyboard_check(ord("S"));
 key_shift = keyboard_check (vk_shift);
 key_space = keyboard_check (vk_space);
 key_R = keyboard_check(ord("R"));
+key_F8 = keyboard_check (vk_f8);
+key_F7 = keyboard_check (vk_f7);
 
+if (key_F8)
+{
+	if (audio_is_paused(song1))
+		{
+			audio_resume_sound(song1);
+		}
+	if (audio_is_playing(song1))	
+		{
+			audio_pause_sound(song1);
+			
+		}
+	
+}
 
 if (key_left)
 {

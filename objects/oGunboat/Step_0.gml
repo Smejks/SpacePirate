@@ -28,6 +28,11 @@ direction = image_angle;
 if (gunBoatHP < 1)
 {
 	audio_play_sound(bigexplosion, 1, 0);
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
 	instance_destroy(oTurret);
 	instance_destroy();
 	instance_create_layer(x, y, "Instances", oPowerUp)

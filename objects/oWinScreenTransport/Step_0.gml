@@ -3,6 +3,12 @@ if (textY < -250)
 {
 	textY = 690;
 }
+
+messageY += 0.2;
+if (textY < -250)
+{
+	textY = 690;
+}
 image_index = 1;
 audio_stop_sound(song1);
 audio_stop_sound(drift);

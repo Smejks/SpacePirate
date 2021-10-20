@@ -19,5 +19,27 @@ if (audio_is_playing(losescreen) == false)
 {
 	audio_play_sound(losescreen, 1, 1);
 }
-image_speed = 0.7;
 image_angle += 0.08;
+
+spriteIndex = random_range(0, 4)
+
+
+switch (spriteIndex)
+{
+	case "0" :
+	image_index = 0;
+	break;
+	case "1" :
+	image_index = 1;
+	break;
+	case "2" :
+	image_index = 2;
+	break;
+	case "3" :
+	image_index = 3;
+	break;
+	case "4" :
+	image_index = 4;
+	break;
+}
+//image_speed = 0.7;

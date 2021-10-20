@@ -14,6 +14,11 @@ missileLaunch = 0;
 
 if (battleShipHP < 1)
 {
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
+	instance_create_layer(x, y, "Instances", oBigExplosion)
 	audio_play_sound(bigexplosion, 1, 0);
 	instance_destroy()
 	instance_create_layer(x, y, "Instances", oPowerUp)

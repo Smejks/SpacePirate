@@ -34,6 +34,12 @@ if (lawEnforcerHP < 1)
 	instance_create_layer(x, y, "Instances", oExplosion);
 	instance_create_layer(x, y, "Instances", oRepair);
 	instance_create_layer(x, y, "Instances", oAmmo);
+	lawDrop = random_range(0,4);
+	if (lawDrop == 4)
+	{
+		instance_create_layer(x, y, "Instances", oPowerUp);
+	}
+	
 	
 	audio_stop_sound(targeting);
 	audio_play_sound(explosion1, 1, 0);
