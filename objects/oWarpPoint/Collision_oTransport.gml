@@ -10,5 +10,5 @@ if (oTransport.transportHP < 5 &&
 	instance_number(oLawEnforcer) == 0)
 {
 audio_stop_sound(song1);
-room_goto(4);
+room_goto(7);
 }

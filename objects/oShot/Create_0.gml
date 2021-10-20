@@ -1,4 +1,5 @@
-shotDamage = random_range(1, 2);
+shotDamage = 500;
+//shotDamage = random_range(1, 2);
 
 if (oShip.weaponsRestored == 2)
 {
