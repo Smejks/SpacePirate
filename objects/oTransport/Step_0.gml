@@ -38,9 +38,29 @@ image_angle += transportRSpeed;
 	{
 		speed = 7;
 		direction = point_direction(x, y, oShip.x, oShip.y);
+		if (audio_is_playing(targeted) == false)
+			{
+			audio_play_sound(targeted, 1, 1);
+			}
+	}
+	else
+	{
+		audio_stop_sound(targeted)
 	}
 
 
+}
+
+if (distance_to_object(oWarpPoint) < 2000 && distance_to_object(oShip) > 2000)
+{
+	if ( audio_is_playing(warning) == false)
+	{
+	audio_play_sound 	(warning, 1, 0)
+	}
+}
+else
+{
+	audio_stop_sound(warning);
 }
 
 if (transportHP < 1)
