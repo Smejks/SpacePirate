@@ -18,3 +18,16 @@ if (room == 1)
 draw_text_transformed_color(room_width/2 - 600 + scroll1, room_height/2 - 170, "NICELY DONE! NOW LET'S SEE WHAT'S INSIDE", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 draw_text_transformed_color(room_width/2 - 600 - scroll1 * 1.5, room_height/2 + 150, "PRESS FIRE OR DRIFT TO EXIT WARP SPACE AND WHACK THE PIÑATA!", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 }
+
+if (room == 1)
+{
+draw_text_transformed_color(room_width/2 - 600 + scroll1, room_height/2 - 170, "NICELY DONE! NOW LET'S SEE WHAT'S INSIDE", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+draw_text_transformed_color(room_width/2 - 600 - scroll1 * 1.5, room_height/2 + 150, "PRESS FIRE OR DRIFT TO EXIT WARP SPACE AND WHACK THE PIÑATA!", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+
+			draw_line_color(x + random_range(-20, 20), y + random_range(-2, 2), oCapturedTransport.x, oCapturedTransport.y + random_range(-20, 20), c_aqua, c_blue)
+			draw_line_color(x + random_range(-20, 20), y + random_range(-2, 2), oCapturedTransport.x, oCapturedTransport.y + random_range(-20, 20), c_aqua, c_blue)
+			draw_line_color(x + random_range(-20, 20), y + random_range(-2, 2), oCapturedTransport.x, oCapturedTransport.y + random_range(-20, 20), c_aqua, c_blue)
+			draw_line_color(x + random_range(-20, 20), y + random_range(-2, 2), oCapturedTransport.x, oCapturedTransport.y + random_range(-20, 20), c_white, c_blue)
+			draw_line_color(x + random_range(-20, 20), y + random_range(-2, 2), oCapturedTransport.x, oCapturedTransport.y + random_range(-20, 20), c_aqua, c_blue)
+			draw_line_color(x + random_range(-20, 20), y + random_range(-2, 2), oCapturedTransport.x, oCapturedTransport.y + random_range(-20, 20), c_aqua, c_white)
+}

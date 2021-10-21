@@ -312,6 +312,7 @@ if (speed < maxSpeed + 8)
 		{
 			image_index = random_range(1, 2);
 			instance_create_layer(oShip.x, oShip.y, "Instances", oShot);
+			instance_create_layer(oShip.x, oShip.y, "Instances", oGunFire);
 			ammo--;
 			reFire = 0;
 			
