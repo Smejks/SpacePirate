@@ -1,3 +1,5 @@
+show_debug_message(room);
+
 
 if (x < 0 || x > room_width || y < 0 || y > room_height)
 {
