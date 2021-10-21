@@ -17,6 +17,7 @@ if (audio_is_playing(winscreen) == false)
 	audio_play_sound(winscreen, 1, 1);
 }
 transition = 0;
+delayTime = 0;
 time = 0;
 
 scrollX1 = 0;

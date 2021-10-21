@@ -29,5 +29,5 @@ show_debug_message(room)
 if (mouse_check_button(mb_left) || mouse_check_button(mb_right) || gamepad_button_check(0, gp_face1) || gamepad_button_check(0, gp_face3))
 {
 	audio_stop_sound(winscreen);
-	room_goto(1);
+	room_goto(2);
 }
