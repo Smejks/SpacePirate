@@ -12,4 +12,4 @@ draw_text_transformed_color(oLoseScreenTransport.x + 200, textY +160, "MUSIC : J
 draw_text_transformed_color(oLoseScreenTransport.x + 200, textY +190, "GRAPHICS : Jonas Pannee", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
 draw_text_transformed_color(oLoseScreenTransport.x + 200, textY +220, "PLAYTESTING : Anton Willmarsson", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
 draw_text_transformed_color(oLoseScreenTransport.x + 200, textY +250, "PLAYTESTING : William Ullholm", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
-draw_text_transformed_color(oWinScreenTransport.x + 100, textY +280, "PLAYTESTING : Luis Gómez Vecchio", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
+draw_text_transformed_color(oWinScreenTransport.x + 100, textY +280, "PLAYTESTING : Luis Gomez Vecchio", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
