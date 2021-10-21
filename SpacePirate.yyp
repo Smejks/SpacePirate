@@ -41,6 +41,7 @@
     {"id":{"name":"shot1","path":"sounds/shot1/shot1.yy",},"order":1,},
     {"id":{"name":"oShipDead","path":"objects/oShipDead/oShipDead.yy",},"order":28,},
     {"id":{"name":"pickup2","path":"sounds/pickup2/pickup2.yy",},"order":25,},
+    {"id":{"name":"oCapturedTransport","path":"objects/oCapturedTransport/oCapturedTransport.yy",},"order":37,},
     {"id":{"name":"explosion2","path":"sounds/explosion2/explosion2.yy",},"order":16,},
     {"id":{"name":"damaged","path":"sounds/damaged/damaged.yy",},"order":27,},
     {"id":{"name":"sWarpingTransport","path":"sprites/sWarpingTransport/sWarpingTransport.yy",},"order":27,},

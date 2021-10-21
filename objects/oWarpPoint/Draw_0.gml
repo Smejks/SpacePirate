@@ -1,4 +1,3 @@
-show_debug_message(oWarpPoint.jamming)
 draw_self();
 if (distance_to_object(oShip) < 1000)
 {

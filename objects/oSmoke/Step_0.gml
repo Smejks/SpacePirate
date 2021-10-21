@@ -1,9 +1,9 @@
 image_alpha = 0.2
-if (room != 3)
+if (room != 4)
 {
 image_angle = oShip.image_angle;
 }
-if (room == 3)
+if (room == 4)
 {
 	image_angle = oShipDead.image_angle;
 if (instance_number(oSmoke2) < 100)

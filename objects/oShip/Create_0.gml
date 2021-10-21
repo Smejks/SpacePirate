@@ -29,6 +29,7 @@ shot = 0;
 weaponsRestored = 0;
 upgradeLevel = 1;
 
+audio_stop_sound(winscreen);
 audio_stop_sound(warning3);
 audio_stop_sound(song2);
 audio_play_sound(drift, 5, 1);

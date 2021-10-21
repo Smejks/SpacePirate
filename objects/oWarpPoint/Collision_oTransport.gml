@@ -1,7 +1,7 @@
 if (oTransport.transportHP > 5 && distance_to_object(oShip) > 1000)
 {
 
-room_goto(5);
+room_goto(6);
 }
 
 if (oTransport.transportHP < 5 &&
@@ -10,5 +10,5 @@ if (oTransport.transportHP < 5 &&
 	instance_number(oLawEnforcer) == 0)
 {
 audio_stop_sound(song1);
-room_goto(7);
+room_goto(1);
 }

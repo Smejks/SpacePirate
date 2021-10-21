@@ -6,6 +6,7 @@ if (mouse_check_button(mb_left) || mouse_check_button(mb_right) || gamepad_butto
 	transition = true;
 	x += -20;
 }
+
 if (transition == true)
 {
 	audio_play_sound(warning2, 1, 0)
@@ -14,7 +15,11 @@ if (transition == true)
 		if (time > 2.5)
 	{
 		audio_stop_sound(warning2);
-		room_goto(7);
-	}
+		if (room == 6)
+		{	
+			room_goto(1);
+		}
+
+}
 
 }

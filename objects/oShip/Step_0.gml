@@ -90,7 +90,7 @@ if (hitPoints < 1)
 	
 	if (deathDelayTime > 1)
 	{
-		room_goto(3)
+		room_goto(4)
 	}
 }
 
@@ -242,7 +242,7 @@ if (key_right && key_space || analogueAxis > 0 && gamepad_button_check(0, gp_sho
 	
 }
 
-if (key_up && key_shift == false)
+if (key_up && key_shift == false && speed < maxSpeed)
 
 {
 	speed += 0.3;
