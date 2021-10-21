@@ -61,6 +61,8 @@
     {"id":{"name":"explosion3","path":"sounds/explosion3/explosion3.yy",},"order":17,},
     {"id":{"name":"driftidle","path":"sounds/driftidle/driftidle.yy",},"order":23,},
     {"id":{"name":"oLawShot","path":"objects/oLawShot/oLawShot.yy",},"order":18,},
+    {"id":{"name":"sCapturedTransport","path":"sprites/sCapturedTransport/sCapturedTransport.yy",},"order":31,},
+    {"id":{"name":"WarpToWin","path":"rooms/WarpToWin/WarpToWin.yy",},"order":8,},
     {"id":{"name":"oReticule","path":"objects/oReticule/oReticule.yy",},"order":13,},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},"order":10,},
     {"id":{"name":"oRepair","path":"objects/oRepair/oRepair.yy",},"order":5,},
@@ -142,6 +144,7 @@
     {"roomId":{"name":"Win","path":"rooms/Win/Win.yy",},},
     {"roomId":{"name":"Warped","path":"rooms/Warped/Warped.yy",},},
     {"roomId":{"name":"Death","path":"rooms/Death/Death.yy",},},
+    {"roomId":{"name":"WarpToWin","path":"rooms/WarpToWin/WarpToWin.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
