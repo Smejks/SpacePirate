@@ -1,9 +1,9 @@
-shotDamage = 500;
-//shotDamage = random_range(1, 2);
-
+shotDamage = random_range(1, 2);
+sprite_index = sShot;
 if (oShip.weaponsRestored == 2)
 {
-	shotDamage = 4;
+	shotDamage = 10;
+	sprite_index = sShotBoost;
 	oShip.speed -= 1;
 }
 shotLifeTime = 0;

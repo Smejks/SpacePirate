@@ -1,5 +1,6 @@
 draw_self();
 
+
 draw_text_transformed_color(x + 25, y +25, round(ammo), 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
 
 draw_rectangle_color(x - 40, y - 60, x - 40 + hitPoints, y - 65, c_green, c_green, c_green, c_green, 0);

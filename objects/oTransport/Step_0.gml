@@ -34,7 +34,7 @@ if (transportHP < 5 && transportHP > 0)
 sprite_index = sTransportDisabled;
 speed = 0.5;
 image_angle += transportRSpeed;
-	if (keyboard_check (vk_space) && distance_to_object(oShip) < 1500)
+	if (keyboard_check (vk_space) || gamepad_button_check(0, gp_face1) && distance_to_object(oShip) < 1500)
 	{
 		speed = 7;
 		direction = point_direction(x, y, oShip.x, oShip.y);
