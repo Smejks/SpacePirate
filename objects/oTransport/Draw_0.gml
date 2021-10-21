@@ -7,8 +7,9 @@ draw_rectangle_color(x - 25 + transportHP, y - 200, x + 25, y - 205, c_red, c_re
 
 if (distance_to_object(oWarpPoint) < 2000 && distance_to_object(oShip) > 2000)
 {
-draw_text_transformed_color(oShip.x - 200, oShip.y + 150, "TRANSPORT APROACHING WARP GATE!", 2, 2, 0, c_green, c_green, c_green, c_green, 1);
-draw_text_transformed_color(oShip.x, oShip.y + 180, distance_to_object(oWarpPoint), 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
+draw_text_transformed_color(oShip.x - 250, oShip.y + 150, "TRANSPORT APROACHING WARP GATE!", 2, 2, 0, c_green, c_green, c_green, c_green, 1);
+draw_text_transformed_color(oShip.x - 100, oShip.y + 180, distance_to_object(oWarpPoint), 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
+draw_rectangle_color(oShip.x + distance_to_object(oWarpPoint) / 8 - 10, oShip.y + 240, oShip.x - distance_to_object(oWarpPoint) / 8, oShip.y + 245, c_aqua, c_aqua, c_aqua, c_aqua, 0);
 }
 
 if (alertAuthorities > 1800)
