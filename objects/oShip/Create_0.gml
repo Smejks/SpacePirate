@@ -1,10 +1,14 @@
 speed = 15;
 image_index = 0;
 image_speed = 0;
+
+gamepad_set_axis_deadzone(0, 0.5);
+
 maxSpeed = 15;
 turboBoost = 0.1;
 turboTimer = 0;
 turboMaxSpeed = 0;
+analogueAxis = 0;
 
 drifting = 0;
 driftingTimer = 0;

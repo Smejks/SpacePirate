@@ -104,7 +104,7 @@ if (courseCorrection >= -3 && courseCorrection <= 2)
 } 
 
 
-if (mouse_check_button(mb_left) && driftingTimer < 30 && drifting < 2)
+if (mouse_check_button(mb_left) || gamepad_button_check(0, gp_face3) && driftingTimer < 30 && drifting < 2)
 	{
 		audio_resume_sound(drift);
 		drifting = 1;
@@ -121,7 +121,7 @@ if (mouse_check_button(mb_left) && driftingTimer < 30 && drifting < 2)
 
 
 
-if (mouse_check_button_released(mb_left))
+if (mouse_check_button_released(mb_left) || gamepad_button_check_released(0, gp_face3))
 {
 	drifting = 2;
 }
@@ -169,12 +169,14 @@ if (turnSpeed > turnSpeedFloor)
 	turnSpeed = turnSpeedFloor;
 }
 
-key_left = keyboard_check (vk_left) || keyboard_check(ord("A"));
-key_right = keyboard_check (vk_right) || keyboard_check(ord("D"));
-key_up = keyboard_check (vk_up) || keyboard_check(ord("W"));
-key_down = keyboard_check (vk_down) || keyboard_check(ord("S"));
+analogueAxis = gamepad_axis_value(0, gp_axislh);
+analogueAxisFine = gamepad_axis_value(0, gp_axisrh);
+key_left = gamepad_button_check(0, gp_padl) || keyboard_check(ord("A"));
+key_right = gamepad_button_check(0, gp_padr) || keyboard_check(ord("D"));
+key_up = gamepad_button_check(0, gp_padu) || keyboard_check(ord("W"));
+key_down = gamepad_button_check(0, gp_shoulderlb) || gamepad_button_check(0, gp_padd) || keyboard_check(ord("S"));
 key_shift = keyboard_check (vk_shift);
-key_space = keyboard_check (vk_space);
+key_space = keyboard_check (vk_space) || gamepad_button_check(0, gp_face1);
 key_R = keyboard_check(ord("R"));
 key_F8 = keyboard_check (vk_f8);
 key_F7 = keyboard_check (vk_f7);
@@ -193,7 +195,7 @@ if (key_F8)
 	
 }
 
-if (key_left)
+if (key_left || analogueAxis < 0)
 {
 	if (drifting == 0)
 	{
@@ -204,7 +206,7 @@ if (key_left)
 		image_angle += turnSpeedFloor;
 	}
 }
-if (key_right)
+if (key_right || analogueAxis > 0)
 {
 	if (drifting == 0)
 	{
@@ -216,7 +218,31 @@ if (key_right)
 	}
 	
 }
-if (key_up && key_shift == false)
+if (analogueAxis < 0.5 && analogueAxisFine < 0)
+{
+	if (drifting == 0)
+	{
+		direction += turnSpeed / 2;
+	}
+	if (drifting == 1 || drifting == 2)
+	{
+		image_angle += turnSpeedFloor;
+	}
+}
+if (analogueAxis < 0.5 && analogueAxisFine > 0)
+{
+	if (drifting == 0)
+	{
+		direction -= turnSpeed / 2;
+	}
+	if (drifting == 1 || drifting == 2)
+	{
+		image_angle -= turnSpeedFloor;
+	}
+	
+}
+
+if (key_up && key_shift == false || gamepad_button_check(0, gp_shoulderrb) == false)
 {
 			
 		turboMaxSpeed -= turbo;
@@ -227,7 +253,7 @@ if (key_up && key_shift == false)
 	
 	
 }
-if (key_shift && key_up)
+if (key_shift && key_up || gamepad_button_check(0, gp_shoulderrb))
 {
 		if (audio_is_playing(turbo) == false)
 	{
@@ -248,7 +274,7 @@ else
 	audio_stop_sound(turbo);
 }
 
-if (key_down)
+if (key_down || gamepad_button_check(0, gp_shoulderlb))
 {
 	speed -= brakeRate;
 	if (speed < maxSpeed * -1)
@@ -272,7 +298,7 @@ if (speed < maxSpeed + 8)
 	weaponsRestored = 2;
 	}
 	image_index = 0;
-	if (mouse_check_button(mb_right) && reFire > fireRate)
+	if (mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderr) && reFire > fireRate)
 		{
 			image_index = random_range(1, 2);
 			instance_create_layer(oShip.x, oShip.y, "Instances", oShot);
