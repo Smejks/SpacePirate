@@ -13,7 +13,7 @@ var pointdir = point_direction(x, y, oBattleship.x + random_range(0, 400),  oBat
 image_angle += sin(degtorad(pointdir - image_angle)) * gunBoatRSpeed;
 direction = image_angle;
 }
-if (distance_to_object(oTransport) > 3000)
+if (distance_to_object(oTransport) > 3000 && instance_number(oBattleship) > 0)
 {
 var pointdir = point_direction(x, y, oBattleship.x + random_range(0, 400),  oBattleship.y + random_range(0, 400));
 }
