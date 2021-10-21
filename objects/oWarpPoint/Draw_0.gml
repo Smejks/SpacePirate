@@ -4,7 +4,7 @@ if (distance_to_object(oShip) < 1000)
 	jamming = true;
 	draw_line_color(x, y, oShip.x, oShip.y, c_black, c_aqua);
 	draw_text_transformed_color(oShip.x - 120, oShip.y + 200, "WARP GATE JAMMING ACTIVE", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-	draw_text_transformed_color(oShip.x - 150, oShip.y + 230, "HOLD SPACE / X TO REPAIR SHIP AND REPLENISH AMMO", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+	draw_text_transformed_color(oShip.x - 300, oShip.y + 230, "HOLD SPACE / X TO REPAIR SHIP AND REPLENISH AMMO", 1.5, 1.5, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 	if (oShip.key_space)
 		{
 			oShip.hitPoints += 0.1;
