@@ -1,5 +1,6 @@
 show_debug_message(room)
 audio_stop_sound(warning3);
+audio_stop_sound(winscreen);
 y += (random_range(-5, 5));
 x += (random_range(-2, 2));
 

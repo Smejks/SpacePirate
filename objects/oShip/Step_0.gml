@@ -172,7 +172,6 @@ if (turnSpeed > turnSpeedFloor)
 }
 
 analogueAxis = gamepad_axis_value(0, gp_axislh);
-analogueAxisFine = gamepad_axis_value(0, gp_axisrh);
 key_left = gamepad_button_check(0, gp_padl) || keyboard_check(ord("A"));
 key_right = gamepad_button_check(0, gp_padr) || keyboard_check(ord("D"));
 key_up = gamepad_button_check(0, gp_padu) || keyboard_check(ord("W"));
@@ -197,7 +196,7 @@ if (key_F8)
 	
 }
 
-if (key_left || analogueAxis < 0)
+if (key_left && key_space == false || analogueAxis < 0 && gamepad_button_check(0, gp_shoulderl) == false)
 {
 	if (drifting == 0)
 	{
@@ -208,7 +207,7 @@ if (key_left || analogueAxis < 0)
 		image_angle += turnSpeedFloor;
 	}
 }
-if (key_right || analogueAxis > 0)
+if (key_right && key_space == false || analogueAxis > 0 && gamepad_button_check(0, gp_shoulderl) == false)
 {
 	if (drifting == 0)
 	{
@@ -220,7 +219,7 @@ if (key_right || analogueAxis > 0)
 	}
 	
 }
-if (analogueAxis < 0.5 && analogueAxisFine < 0)
+if (key_left && key_space || analogueAxis < 0 && gamepad_button_check(0, gp_shoulderl))
 {
 	if (drifting == 0)
 	{
@@ -231,7 +230,7 @@ if (analogueAxis < 0.5 && analogueAxisFine < 0)
 		image_angle += turnSpeedFloor;
 	}
 }
-if (analogueAxis < 0.5 && analogueAxisFine > 0)
+if (key_right && key_space || analogueAxis > 0 && gamepad_button_check(0, gp_shoulderl))
 {
 	if (drifting == 0)
 	{
@@ -242,6 +241,16 @@ if (analogueAxis < 0.5 && analogueAxisFine > 0)
 		image_angle -= turnSpeedFloor;
 	}
 	
+}
+
+if (key_up && key_shift == false)
+
+{
+	speed += 0.3;
+	if speed > maxSpeed
+	{
+		speed = maxSpeed;
+	}
 }
 
 if (key_up && key_shift == false || gamepad_button_check(0, gp_shoulderrb) == false)
@@ -257,7 +266,7 @@ if (key_up && key_shift == false || gamepad_button_check(0, gp_shoulderrb) == fa
 }
 if (key_shift && key_up || gamepad_button_check(0, gp_shoulderrb))
 {
-		if (audio_is_playing(turbo) == false)
+	if (audio_is_playing(turbo) == false)
 	{
 	audio_play_sound(turbo, 1, 1);
 	}
@@ -300,7 +309,7 @@ if (speed < maxSpeed + 8)
 	weaponsRestored = 2;
 	}
 	image_index = 0;
-	if (mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderr) && reFire > fireRate)
+	if (mouse_check_button(mb_right) && reFire > fireRate || gamepad_button_check(0, gp_shoulderr) && reFire > fireRate)
 		{
 			image_index = random_range(1, 2);
 			instance_create_layer(oShip.x, oShip.y, "Instances", oShot);
@@ -346,6 +355,11 @@ if (speed < maxSpeed + 8)
 			
 		}
 }
+}
+
+if (ammo < 0)
+{
+	ammo = 0;
 }
 
 if (speed <= maxSpeed)
