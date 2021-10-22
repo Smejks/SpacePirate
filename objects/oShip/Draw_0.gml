@@ -26,7 +26,7 @@ draw_rectangle_color(x - 70, y + 60, x - 75 - speed, y + 60 - speed * 4, c_aqua,
 
 if (hitPoints < maxHitPoints / 4)
 {
-draw_text_transformed_color(oShip.x - 600, oShip.y + 130, "HULL CRITICAL!", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
+draw_text_transformed_color(oShip.x - 100, oShip.y - 100, "HULL CRITICAL!", 1.5, 1.5, 0, c_orange, c_orange, c_orange, c_orange, 1);
 }
 
 if (room == 1 && instance_number(oBattleship) == 0 && instance_number(oGunboat) == 0)
@@ -37,4 +37,5 @@ if (room == 1 && instance_number(oBattleship) == 0 && instance_number(oGunboat) 
 if (room == 3)
 {
 draw_text_transformed_color(oShip.x - 50, oShip.y + 130, "TUTORIAL!", 1.5, 1.5, 0, c_green, c_green, c_green, c_green, 1);
+draw_sprite(sControls, 0, x - 600, room_height / 2);
 }
