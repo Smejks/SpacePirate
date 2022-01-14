@@ -6,4 +6,4 @@ The things I feel like I succeeded with is the sound design, transitions and gam
 Things I identify that could have been improved is communicating the win state to the player, removing unfun elements like accidentally killing the transport ship etc.
 
 Youtube Link:<br>
-[![Yarr!](https://i.ytimg.com/an_webp/Dzvv4iY-zBg/mqdefault_6s.webp?du=3000&sqp=CPCA-o4G&rs=AOn4CLBuG7w-QlcoEnTUsFqzx5zMnZdH7g)](https://youtu.be/Dzvv4iY-zBg)
+[![Yarr!](https://i.ytimg.com/an_webp/Dzvv4iY-zBg/mqdefault_6s.webp?du=3000&sqp=CKiQhY8G&rs=AOn4CLC0Whe-0dkQyjxKALqRvrz2-4GlmA)](https://youtu.be/Dzvv4iY-zBg)
